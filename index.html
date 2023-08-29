@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrome</title>
+</head>
+<body>
+  Enter ant String:  <input type="text" id="a"><br>
+  Result :<input type="text" id="b"><br>
+  <input type="submit" onclick="pal()">
+
+  <script>
+    function pal(){
+        var x=document.getElementById("a").value;
+        var y="";
+        for(i=x.length-1;i>=0;i--){
+            y=y+x[i];
+        }
+        if(x==y)
+        document.getElementById("b").value=y+"Is a palindrome";
+    else
+        document.getElementById("b").value=y+"Is not a palindrome";
+    
+    }
+
+
+
+  </script>
+    
+</body>
+</html>
